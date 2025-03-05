@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="port.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    </head>
+
+    <body>
+
+        <video id="bg-video" autoplay loop muted>
+            <source src="st.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+        <div id="heading" onload="content()">
+            <ul>
+                <li onclick="start()" id="li1">Start</li>
+                <li onclick="about()" id="li2">About</li>
+                <li onclick="project()" id="li3">Project</li>
+                <li onclick="skill()" id="li4">Skill</li>
+                <li onclick="contact()" id="li5">Contact</li>
+            </ul>
+            <i class="fa-solid fa-bars" id="burger-menu" onclick="sidelist()"></i>
+        </div>
+        <div id="sidelist" style="display: none;">
+            <button onclick="back()"><i class="fa-solid fa-arrow-left-long"></i> </button>
+            <ul>
+                <li onclick="start()">Start</li>
+                <li onclick="about()">About</li>
+                <li onclick="project()">Project</li>
+                <li onclick="skill()">Skill</li>
+                <li onclick="contact()">Contact</li>
+            </ul>
+        </div>
+
+        <div id="container1">
+            
+            <div id="pimg">
+                <img src="profile.jpg" alt="profile picture">
+            </div>
+            
+            <div id="text">
+                <h1>Hi, there! </h1>
+                <h2>This is Ruth Gizat, Front-end Developer</h2>
+                <p> 
+                    I am passionate about creating responsive and visually stunning websites that provide seamless user experiences. 
+                    Let's bring your ideas to life and make your website stand out in the digital world :)
+                </p>
+            </div>
+
+        </div>
+
+        <div id="container2">
+            <h1>Let me introduce my self.</h1>
+            <p>Hi, I'm Ruth Gizat! I'm currently studying Software Engineering at Bahir Dar University.
+                <br> My coding journey started back in 2019 when I joined the STEM Incubation Center in 9th grade. <br><br>
+                I began with C++, C# and Python and later expanded my skills to HTML, CSS, and JavaScript.<br><br> Over time 
+                I specialized in front-end development, with JavaScript as my go-to language and React as my favorite framework.
+            </p>
+        </div>
+
+        <div id="container3">
+            <h1>Some of my Projects are here!</h1>
+            <div id="cont">
+                <a href=" https://ruthina1.github.io/bookStore/">
+                    <div class="card">
+                        <img src="book.png">
+                        <h3>Book store</h3>
+                        <p>
+                            An interactive online bookstore for easy browsing, purchasing and reading.
+                        </p>
+                    </div> 
+                 </a>
+            
+                 <a href=" https://ruthina1.github.io/arch-studio/">
+     
+                     <div class="card">
+                        <img src="cover.png">
+                        <h3>Architecture studio</h3>
+                        <p>
+                            Architecture studio website showcasing projects, services and design experitise.
+                        </p>
+                     </div> 
+                  </a>
+     
+                  <a href="#">
+                     <div class="card">
+                        <img src="current.png">
+                        <h3>Alpha Exam</h3>
+                        <p>
+                            Intuitive online platform for Alpha Exam preparation, offering practice tests.
+                        </p>
+                     </div> 
+                  </a>
+     
+                 
+             </div>
+            </div>
+            
+
+
+
+        <div id="container4">
+
+            <h1 id="skill">Skills</h1>
+
+            <div id="conta">
+
+                <div id="digital">
+
+                    <h2>Digital skills</h2>
+                    <div class="skill-container">
+                        <div class="skill-name">HTML</div>
+                        <div class="progress-bar">
+                            <div class="progress html">95%</div>
+                        </div>
+                    </div>
+                
+                    <div class="skill-container">
+                        <div class="skill-name">CSS</div>
+                        <div class="progress-bar">
+                            <div class="progress css">95%</div>
+                        </div>
+                    </div>
+                
+                    <div class="skill-container">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="progress-bar">
+                            <div class="progress javascript">90%</div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-container">
+                        <div class="skill-name">React</div>
+                        <div class="progress-bar">
+                            <div class="progress react">80%</div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div id="soft">
+                    
+                    <h2>Soft skills</h2>
+                    <div class="skill-container">
+                        <div class="skill-name">Communicaion</div>
+                        <div class="progress-bar">
+                            <div class="progress communicaion">95%</div>
+                        </div>
+                    </div>
+                
+                    <div class="skill-container">
+                        <div class="skill-name"> Problem solving</div>
+                        <div class="progress-bar">
+                            <div class="progress problem">90%</div>
+                        </div>
+                    </div>
+                
+                    <div class="skill-container">
+                        <div class="skill-name">Team Work</div>
+                        <div class="progress-bar">
+                            <div class="progress team">90%</div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-container">
+                        <div class="skill-name"> Time Managmenet</div>
+                        <div class="progress-bar">
+                            <div class="progress time">90%</div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+<div id="container5">
+    
+</div>
+
+
+        <div id="container6">
+            <form>
+                <h3>Give me your feedback</h3>
+                <input type="email" placeholder="email"><br>
+                <textarea name="text" id="feedback" placeholder="write your feedback here"></textarea><br>
+                <input type="submit" name="submit" id="submit">
+            </form>
+        </div>
+
+
+        <div id="container7">
+               <pre> <a href="https://www.linkedin.com/in/ruthgt"><i class="fab fa-linkedin"></i></a>    </pre>
+                <pre><a href="https://github.com/ruthina1"><i class="fab fa-github"></i></a>    </pre>
+                <pre><a href="mailto:ruthgizat32@gmail.com"><i class="fa fa-envelope"></i></a>    </pre>
+                <pre><a href="https://www.instagram.com/_m_s_m_s23/" target="_blank"#><i class="fab fa-instagram"></i></a>     </pre>
+        </div>
+
+
+        <script src="port.js"></script>
+    </body>
+</html>
